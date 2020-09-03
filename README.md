@@ -1,16 +1,4 @@
-# Position Taken in Tic Tac Toe
-
-## Objectives
-
-1. Define a method that updates an array passed into it as an argument.
-2. Define a method that uses control flow in the form of `if/else` statements to manipulate an array.
-
-## Overview
-
-We already have methods that display the game board (which is mapped to an array's indices) and a method that asks for a user's input and fills out a position on the game board accordingly. However, before our program can fill out a position on the board, we need to confirm that that position is not already filled with an "X" or an "O"
-
-In this lab we'll be adding a `#position_taken?` method to our Tic Tac Toe game. This method will be responsible for evaluating the user's input against the Tic Tac Toe board and checking to see whether or not that position is occupied.
-
+\
 For example, if the user inputs that they would like to fill out position `"2"`, we would take that string `"2"` and convert it to board index 1. Then we pass the index to our `#position_taken?` and check to see if that position is vacant or if it contains an "X" or an "O". If the position is free, the method should return `false` (i.e. "not taken"); otherwise it will return `true`.
 
 Basically, we have the `#position_taken?` method so you don't end up playing with this guy:
